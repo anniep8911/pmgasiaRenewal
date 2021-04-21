@@ -1,0 +1,201 @@
+body {
+  font-size: 14px;
+  line-height: 20px;
+  color: #555;
+  font-family: 'Noto Serif KR';
+  font-weight: 300;
+  background-color: #363347;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, div, i {
+  font-family: 'Noto Sans KR';
+  color: #fff;
+}
+
+div.mnWrap {
+  height: 840px;
+  position: relative;
+  padding-top: 40px;
+}
+
+div.mnWrap header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+div.mnWrap header .logo {
+  width: 120px;
+  height: 125px;
+  background-color: #fc0;
+}
+
+div.mnWrap header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+
+div.mnWrap header nav h2 {
+  width: calc(100% / 3 - 50px);
+  font-size: 25px;
+  font-family: "TrajanPro";
+  line-height: 80px;
+  cursor: pointer;
+}
+
+div.mnWrap main {
+  width: 90%;
+  margin: auto;
+  font-size: 60px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 80px;
+}
+
+div.mnWrap main h2 {
+  font-family: "TrajanPro";
+  line-height: 60px;
+}
+
+div.content {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+div.content header h3 {
+  font-family: "TrajanPro";
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+}
+
+div.content section {
+  margin-top: 40px;
+}
+
+div.content section .artGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.content section .artGroup:not(:first-of-type) {
+  margin-top: -135px;
+}
+
+div.content section .artGroup article {
+  width: calc(100% / 3 - 30px);
+  height: 440px;
+  background-color: #fc0;
+  margin-left: 10px;
+  -webkit-clip-path: polygon(50% 0%, 50% 0%, 100% 33.33%, 100% 66.66%, 50% 100%, 50% 100%, 0 66.66%, 0 33.33%);
+          clip-path: polygon(50% 0%, 50% 0%, 100% 33.33%, 100% 66.66%, 50% 100%, 50% 100%, 0 66.66%, 0 33.33%);
+  cursor: pointer;
+}
+
+div.bnrWrap {
+  background-color: #fff;
+  margin-top: 40px;
+}
+
+div.bnrWrap * {
+  color: #363347;
+}
+
+div.bnrWrap .bnrGroup {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+div.bnrWrap .bnrGroup .bnr01 {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+div.bnrWrap .bnrGroup .bnr01 h3 {
+  font-size: 30px;
+  font-family: "TrajanPro";
+  line-height: 40px;
+  text-align: center;
+}
+
+div.bnrWrap .bnrGroup .bnr01 p {
+  padding: 20px 0;
+  font-size: 22px;
+  line-height: 40px;
+  border-bottom: 2px solid #363347;
+}
+
+div.ftrWrap {
+  padding-top: 120px;
+}
+
+div.ftrWrap h3 {
+  text-align: center;
+  font-size: 30px;
+  line-height: 40px;
+  font-family: "TrajanPro";
+}
+
+div.ftrWrap section {
+  width: 90%;
+  max-width: 1080px;
+  margin: 40px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.ftrWrap section figure {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+div.ftrWrap footer {
+  width: 90%;
+  max-width: 1080px;
+  margin: 100px auto 0;
+}
+
+div.ftrWrap footer .ulGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.ftrWrap footer .divGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 0;
+}
+/*# sourceMappingURL=common.css.map */
