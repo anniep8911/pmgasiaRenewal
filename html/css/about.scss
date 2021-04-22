@@ -1,0 +1,19 @@
+
+div.mnWrap{
+    background-image: url('../image/about_main.jpg');
+}
+div.content{
+    section{    
+        .artGroup{    
+            article{
+                .image{
+                    @for $i from 1 through 10{
+                        &.i#{$i}{
+                            background-image: url('../image/about_mn_i#{$i}.jpg');
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
