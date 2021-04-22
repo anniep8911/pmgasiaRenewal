@@ -81,6 +81,7 @@ div.content{
     width: 90%;
     max-width: 1080px;
     margin: 0 auto;
+    padding-top: 40px;
     header{
         h3{
             font-family: $titleFS;
@@ -123,7 +124,8 @@ div.content{
                     position: absolute;
                     top: 0;left: 0;
                     background-color: #ccc;
-                    opacity: 0.3;
+                    opacity: 0;
+                    transition: opacity 0.5s;
                     h3{
                         position: absolute;
                         margin: auto;
@@ -136,6 +138,12 @@ div.content{
                         font-family: $titleFS;
                     }
                 }
+                &.back{
+                    .texts{
+                        opacity: 0.8;
+                    }
+
+                }
             }
         }
     }
@@ -145,50 +153,54 @@ div.bnrWrap{
     *{color: $nmColor;}
     margin-top: 40px;
     position: relative;
-    .bnrGroup{
+    .artView{
         width: 90%;
         max-width: 1080px;
         margin: 0 auto;
-        .bnr01{
-            width: 80%;
-            margin: 0 auto;
-            padding: 40px 0;
-            h3{
-                font-size: $h3FZ;
-                font-family: $titleFS;
-                line-height: 40px;
-                text-align: center;
-            }
-            p{
-                padding: 20px 0;
-                font-size: $pFz;
-                line-height: 40px;
-                border-bottom: 2px solid $nmColor;
-            }
-            .client{
-                h4{
-                    margin-top: 20px;
-                    font-size: 20px;
+        overflow: hidden;
+        .artGroup{
+            width: 400%;
+            display: flex;
+            margin-left: -100%;
+            article{
+                width: 25%;
+                padding: 40px 2%;
+                h3{
+                    font-size: $h3FZ;
                     font-family: $titleFS;
+                    line-height: 40px;
+                    text-align: center;
+                }
+                p{
+                    padding: 20px 0;
+                    font-size: $pFz;
+                    line-height: 40px;
+                    border-bottom: 2px solid $nmColor;
+                }
+                .client{
+                    h4{
+                        margin-top: 20px;
+                        font-size: 20px;
+                        font-family: $titleFS;
+                    }
                 }
             }
         }
-    }
-    .btns{
-        display: flex;
-        width: 82%;
-        max-width: 1080px;
-        height: 60px;
-        justify-content: space-between;
-        margin: auto;
-        position: absolute;
-        font-size: 72px;
-        top: 0;bottom: 0;left: 0;right: 0;
-        div{
-            color: #ccc;
-            cursor: pointer;
-        }
-
+        .btns{
+            display: flex;
+            width: 100%;
+            max-width: 1080px;
+            height: 60px;
+            justify-content: space-between;
+            margin: auto;
+            position: absolute;
+            font-size: 40px;
+            top: 0;bottom: 0;left: 0;right: 0;
+            div{
+                color: #ccc;
+                cursor: pointer;
+            }
+        }       
     }
 }
 div.ftrWrap{

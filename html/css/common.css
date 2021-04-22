@@ -79,6 +79,7 @@ div.content {
   width: 90%;
   max-width: 1080px;
   margin: 0 auto;
+  padding-top: 40px;
 }
 div.content header h3 {
   font-family: "TrajanPro";
@@ -139,7 +140,8 @@ div.content section .artGroup article .texts {
   top: 0;
   left: 0;
   background-color: #ccc;
-  opacity: 0.3;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 div.content section .artGroup article .texts h3 {
   position: absolute;
@@ -155,6 +157,9 @@ div.content section .artGroup article .texts h3 {
   color: #000;
   font-family: "TrajanPro";
 }
+div.content section .artGroup article.back .texts {
+  opacity: 0.8;
+}
 
 div.bnrWrap {
   background-color: #fff;
@@ -164,48 +169,53 @@ div.bnrWrap {
 div.bnrWrap * {
   color: #363347;
 }
-div.bnrWrap .bnrGroup {
+div.bnrWrap .artView {
   width: 90%;
   max-width: 1080px;
   margin: 0 auto;
+  overflow: hidden;
 }
-div.bnrWrap .bnrGroup .bnr01 {
-  width: 80%;
-  margin: 0 auto;
-  padding: 40px 0;
+div.bnrWrap .artView .artGroup {
+  width: 400%;
+  display: flex;
+  margin-left: -100%;
 }
-div.bnrWrap .bnrGroup .bnr01 h3 {
+div.bnrWrap .artView .artGroup article {
+  width: 25%;
+  padding: 40px 2%;
+}
+div.bnrWrap .artView .artGroup article h3 {
   font-size: 30px;
   font-family: "TrajanPro";
   line-height: 40px;
   text-align: center;
 }
-div.bnrWrap .bnrGroup .bnr01 p {
+div.bnrWrap .artView .artGroup article p {
   padding: 20px 0;
   font-size: 22px;
   line-height: 40px;
   border-bottom: 2px solid #363347;
 }
-div.bnrWrap .bnrGroup .bnr01 .client h4 {
+div.bnrWrap .artView .artGroup article .client h4 {
   margin-top: 20px;
   font-size: 20px;
   font-family: "TrajanPro";
 }
-div.bnrWrap .btns {
+div.bnrWrap .artView .btns {
   display: flex;
-  width: 82%;
+  width: 100%;
   max-width: 1080px;
   height: 60px;
   justify-content: space-between;
   margin: auto;
   position: absolute;
-  font-size: 72px;
+  font-size: 40px;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
 }
-div.bnrWrap .btns div {
+div.bnrWrap .artView .btns div {
   color: #ccc;
   cursor: pointer;
 }
