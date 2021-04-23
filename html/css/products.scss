@@ -5,12 +5,16 @@ div.mnWrap{
 
 div.bnrWrap{
     .bnrGroup{
+        padding: 40px;
+        width: 90%;
+        max-width: 1080px;
+        margin: 0 auto;
         .bnr01{
             text-align: center;
-            width: 100%;
             p{
                 border: 0;
                 font-size: 28px;
+                line-height: 30px;
             }
             button{
                 font-size: 30px;

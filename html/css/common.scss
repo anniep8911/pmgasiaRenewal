@@ -104,13 +104,13 @@ div.content{
                 height: 400px;
                 margin-left: 10px;
                 cursor: pointer;
+                clip-path: polygon(50% 0%, 50% 0%, 100% 33.33%, 100% 66.66%, 50% 100%, 50% 100%, 0 66.66%, 0 33.33%);
                 .image{
                     width: 100%;
                     height: 100%;
                     background-size: cover;
                     background-repeat: no-repeat;
                     background-position: center;
-                    clip-path: polygon(50% 0%, 50% 0%, 100% 33.33%, 100% 66.66%, 50% 100%, 50% 100%, 0 66.66%, 0 33.33%);
                     @for $i from 1 through 6{
                         &.i#{$i}{
                             background-image: url('../image/index_mn_i#{$i}.jpg');
@@ -120,7 +120,6 @@ div.content{
                 .texts{
                     width: 100%;
                     height: 100%;
-                    clip-path: polygon(50% 0%, 50% 0%, 100% 33.33%, 100% 66.66%, 50% 100%, 50% 100%, 0 66.66%, 0 33.33%);
                     position: absolute;
                     top: 0;left: 0;
                     background-color: #ccc;
@@ -129,13 +128,14 @@ div.content{
                     h3{
                         position: absolute;
                         margin: auto;
-                        width: 120px;
+                        width: 80%;
                         height: 100px;
                         top: 0;bottom: 0;left: 0;right: 0;
                         font-size: $h3FZ;
                         line-height: 40px;
                         color: #000;
                         font-family: $titleFS;
+                        text-align: center;
                     }
                 }
                 &.back{
@@ -161,7 +161,6 @@ div.bnrWrap{
         .artGroup{
             width: 400%;
             display: flex;
-            margin-left: -100%;
             article{
                 width: 25%;
                 padding: 40px 2%;
@@ -178,10 +177,25 @@ div.bnrWrap{
                     border-bottom: 2px solid $nmColor;
                 }
                 .client{
+                    display: flex;
+                    align-items: center;
                     h4{
                         margin-top: 20px;
                         font-size: 20px;
                         font-family: $titleFS;
+                        width: 80%;
+                    }
+                    .logo{
+                        width: 20%;
+                        height: 30px;
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        @for $i from 1 through 3{
+                            &.i#{$i}{
+                                background-image: url('../image/index_logo_0#{$i}.png');
+                            }
+                        }
                     }
                 }
             }
